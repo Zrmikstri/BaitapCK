@@ -10,7 +10,7 @@ istream& operator>>(istream& is, QLPT& p)
     is >> p.SoPhiThuyenShieldato;
     cin.ignore();
     p.DSPT.resize(p.SoPhiThuyenApollo+p.SoPhiThuyenRocketo+p.SoPhiThuyenShieldato);
-    for (int i = 0;i < p.SoPhiThuyenApollo+p.SoPhiThuyenRocketo+p.SoPhiThuyenShieldato;i++)
+    for (int i = 0;i < p.SoPhiThuyenApollo+p.SoPhiThuyenRocketo+p.SoPhiThuyenShieldato;++i)
     {
         if (i == 0) cout << "Nhap danh sach phi thuyen Apollo\n";
         else if (i == p.SoPhiThuyenApollo) cout << "Nhap danh sach phi thuyen Rocketo\n";
